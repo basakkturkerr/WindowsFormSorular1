@@ -16,5 +16,16 @@ namespace WindowsFormsSorular1
         {
             InitializeComponent();
         }
+
+        // 1)  Textbox dan girilen sayıyın karesini başka bir textbox a yazdır
+
+        private void btnKare_Click(object sender, EventArgs e)
+        {
+            double sayi = Convert.ToDouble(txtSayi.Text);
+
+            double sonuc = sayi * sayi;
+            txtSonuc.Text = sonuc.ToString();
+        }
+
     }
 }
